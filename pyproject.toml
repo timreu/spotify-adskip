@@ -1,0 +1,10 @@
+[project]
+name = "spotify-adskip"
+version = "0.1.0"
+description = "Python-based spotify ad skipper"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "dbus-python>=1.4.0",
+    "mpris2>=1.0.2",
+]
