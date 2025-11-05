@@ -12,8 +12,8 @@ Start spotify by starting the script main.py.
 ## How it works:
 On startup, spotify will never play an ad. Using dbus/mpris2 interface, you can
 make spotify start playing after spawning the app. Ads cannot be skipped. 
-dbus`s (mpris2.Player)[https://mpris2.readthedocs.io/en/latest/interfaces.html#mpris2.Player]
-has the property (CanGoNext)[https://mpris2.readthedocs.io/en/latest/interfaces.html#mpris2.Player.CanGoNext]
+dbus`s [mpris2.Player](https://mpris2.readthedocs.io/en/latest/interfaces.html#mpris2.Player)
+has the property [CanGoNext](https://mpris2.readthedocs.io/en/latest/interfaces.html#mpris2.Player.CanGoNext)
 , which is accessible through dbus. When realizing you cannot go next, the script
 terminates the app and restarts it.  
 
